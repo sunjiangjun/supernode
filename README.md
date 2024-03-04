@@ -331,4 +331,4 @@ notes:
 
 tips:
 
- base code fork: https://github.com/0xcregis/easynode
+ base code fork from https://github.com/0xcregis/easynode
