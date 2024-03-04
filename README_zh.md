@@ -329,3 +329,7 @@ notes:
 ``````
 
 [更多](https://github.com/0xcregis/easynode/blob/main/cmd/easynode/README.md)
+
+
+tips:
+base code fork: https://github.com/0xcregis/easynode
