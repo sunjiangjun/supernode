@@ -1,4 +1,4 @@
-# Easynode
+# Supernode
 [![Go](https://github.com/0xcregis/easynode/actions/workflows/go.yml/badge.svg)](https://github.com/0xcregis/easynode/actions/workflows/go.yml)
 
 > English | [中文](https://github.com/0xcregis/easynode/blob/main/README_zh.md)
