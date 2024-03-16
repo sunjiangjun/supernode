@@ -32,7 +32,7 @@ Allow all developers to use on-chain services without deploying nodes or knowing
 - Historical data backup
 
 
-## Blockchain for table
+## Supported blockchain
 
   | blockchain      | chaincode |  desc   |
   |:----------------|:---------:|:-------:|
