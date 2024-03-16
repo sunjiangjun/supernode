@@ -21,9 +21,9 @@ collect是easynode系统的基础和核心服务，是其他服务的运行的�
 
 (以linux系统为例)
 
-- mkdir easynode & cd easynode
-- git clone https://github.com/0xcregis/easynode.git
-- cd easynode/cmd/collect
+- mkdir supernode & cd supernode
+- git clone https://github.com/sunjiangjun/supernode.git
+- cd supernode/cmd/collect
 - CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o easynode_collect app.go
   (mac下编译linux程序为例，其他交叉编译的命令请自行搜索)
 

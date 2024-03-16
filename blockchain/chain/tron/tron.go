@@ -8,8 +8,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/0xcregis/easynode/blockchain"
-	"github.com/0xcregis/easynode/common/util"
+	"github.com/sunjiangjun/supernode/blockchain"
+	"github.com/sunjiangjun/supernode/common/util"
 	"github.com/tidwall/gjson"
 )
 

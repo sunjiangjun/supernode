@@ -6,10 +6,10 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/0xcregis/easynode/task"
-	"github.com/0xcregis/easynode/task/config"
 	"github.com/redis/go-redis/v9"
 	"github.com/segmentio/kafka-go"
+	"github.com/sunjiangjun/supernode/task"
+	"github.com/sunjiangjun/supernode/task/config"
 	"github.com/sunjiangjun/xlog"
 )
 

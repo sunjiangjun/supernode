@@ -7,9 +7,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/0xcregis/easynode/collect/config"
-	"github.com/0xcregis/easynode/common/util"
 	"github.com/segmentio/kafka-go"
+	"github.com/sunjiangjun/supernode/collect/config"
+	"github.com/sunjiangjun/supernode/common/util"
 )
 
 func Init() *Service {

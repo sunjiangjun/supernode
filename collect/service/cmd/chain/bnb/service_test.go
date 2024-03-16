@@ -3,10 +3,10 @@ package bnb
 import (
 	"testing"
 
-	"github.com/0xcregis/easynode/collect"
-	"github.com/0xcregis/easynode/collect/config"
-	"github.com/0xcregis/easynode/collect/service/db"
 	"github.com/sirupsen/logrus"
+	"github.com/sunjiangjun/supernode/collect"
+	"github.com/sunjiangjun/supernode/collect/config"
+	"github.com/sunjiangjun/supernode/collect/service/db"
 	"github.com/sunjiangjun/xlog"
 )
 

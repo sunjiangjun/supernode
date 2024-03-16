@@ -11,7 +11,7 @@ COPY ../go.mod .
 COPY ../go.sum .
 RUN go mod download
 COPY .. .
-RUN go build -ldflags '-s -w' -o /app/easynode ./cmd/easynode/app.go
+RUN go build -ldflags '-s -w' -o /app/supernode ./cmd/supernode/app.go
 
 
 FROM alpine
@@ -24,9 +24,9 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 WORKDIR /app
 CMD  mkdir config
-COPY --from=builder /app/easynode /app/easynode
+COPY --from=builder /app/supernode /app/supernode
 
 EXPOSE 9001 9002 9003
 
-ENTRYPOINT ["./easynode"]
+ENTRYPOINT ["./supernode"]
 CMD ["-collect","./config/collect_config.json","-task","./config/task_config.json","-blockchain","./config/blockchain_config.json","-taskapi","./config/taskapi_config.json","-store","./config/store_config.json"]

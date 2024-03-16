@@ -1,4 +1,4 @@
-Store is the basic and core service of the easynode system. This service is responsible for monitoring address management, user subscription and cancellation, data push, data placement and other functions.
+Store is the basic and core service of the supernode system. This service is responsible for monitoring address management, user subscription and cancellation, data push, data placement and other functions.
 
 ## Prerequisites
 
@@ -9,9 +9,9 @@ Store is the basic and core service of the easynode system. This service is resp
 
 (Take linux system as an example)
 
-- mkdir easynode & cd easynode
-- git clone https://github.com/0xcregis/easynode.git
-- cd easynode/cmd/store
+- mkdir supernode & cd supernode
+- git clone https://github.com/sunjiangjun/supernode.git
+- cd supernode/cmd/store
 - CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o easynode_store app.go
   (Compiling a Linux program under Mac is an example. Please search for other cross-compilation commands by yourself)
 
@@ -324,7 +324,7 @@ curl --location --request POST 'localhost:9003/api/store/filter/delete' \
 
 - data.chainCode
    
-  chain code ,visit [chainCode](https://github.com/0xcregis/easynode/blob/hotfix/release-0.5.1/README.md)
+  chain code ,visit [chainCode](https://github.com/sunjiangjun/supernode/blob/hotfix/release-0.5.1/README.md)
 - data.from,data.to
  
   transaction sender and transaction receiver

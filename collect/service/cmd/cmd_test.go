@@ -5,9 +5,9 @@ import (
 	"log"
 	"testing"
 
-	"github.com/0xcregis/easynode/collect"
-	"github.com/0xcregis/easynode/collect/config"
-	"github.com/0xcregis/easynode/common/util"
+	"github.com/sunjiangjun/supernode/collect"
+	"github.com/sunjiangjun/supernode/collect/config"
+	"github.com/sunjiangjun/supernode/common/util"
 	"github.com/sunjiangjun/xlog"
 )
 

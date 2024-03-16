@@ -3,7 +3,7 @@ package btc
 import (
 	"time"
 
-	"github.com/0xcregis/easynode/collect"
+	"github.com/sunjiangjun/supernode/collect"
 	"github.com/tidwall/gjson"
 )
 

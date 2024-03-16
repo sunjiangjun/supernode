@@ -1,16 +1,16 @@
 package taskcreate
 
 import (
-	"github.com/0xcregis/easynode/common/chain"
-	"github.com/0xcregis/easynode/task"
-	"github.com/0xcregis/easynode/task/config"
-	"github.com/0xcregis/easynode/task/service/taskcreate/bnb"
-	"github.com/0xcregis/easynode/task/service/taskcreate/btc"
-	"github.com/0xcregis/easynode/task/service/taskcreate/ether"
-	"github.com/0xcregis/easynode/task/service/taskcreate/filecoin"
-	"github.com/0xcregis/easynode/task/service/taskcreate/polygonpos"
-	"github.com/0xcregis/easynode/task/service/taskcreate/tron"
-	"github.com/0xcregis/easynode/task/service/taskcreate/xrp"
+	"github.com/sunjiangjun/supernode/common/chain"
+	"github.com/sunjiangjun/supernode/task"
+	"github.com/sunjiangjun/supernode/task/config"
+	"github.com/sunjiangjun/supernode/task/service/taskcreate/bnb"
+	"github.com/sunjiangjun/supernode/task/service/taskcreate/btc"
+	"github.com/sunjiangjun/supernode/task/service/taskcreate/ether"
+	"github.com/sunjiangjun/supernode/task/service/taskcreate/filecoin"
+	"github.com/sunjiangjun/supernode/task/service/taskcreate/polygonpos"
+	"github.com/sunjiangjun/supernode/task/service/taskcreate/tron"
+	"github.com/sunjiangjun/supernode/task/service/taskcreate/xrp"
 	"github.com/sunjiangjun/xlog"
 )
 

@@ -4,7 +4,7 @@ import (
 	"log"
 	"testing"
 
-	"github.com/0xcregis/easynode/task/config"
+	"github.com/sunjiangjun/supernode/task/config"
 )
 
 func Init() *Service {

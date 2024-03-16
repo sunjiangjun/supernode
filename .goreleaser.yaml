@@ -11,8 +11,8 @@ builds:
       - linux
     goarch:
       - amd64
-    main: ./cmd/easynode
-    binary: ./cmd/easynode
+    main: ./cmd/supernode
+    binary: ./cmd/supernode
 
 archives:
   - format: tar.gz

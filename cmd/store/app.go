@@ -7,9 +7,9 @@ import (
 	"log"
 	"time"
 
-	"github.com/0xcregis/easynode/store/config"
-	"github.com/0xcregis/easynode/store/service"
 	"github.com/gin-gonic/gin"
+	"github.com/sunjiangjun/supernode/store/config"
+	"github.com/sunjiangjun/supernode/store/service"
 	"github.com/sunjiangjun/xlog"
 )
 

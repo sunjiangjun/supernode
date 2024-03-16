@@ -7,10 +7,10 @@ import (
 	"io"
 	"math/rand"
 
-	"github.com/0xcregis/easynode/taskapi"
-	"github.com/0xcregis/easynode/taskapi/config"
 	"github.com/gin-gonic/gin"
 	"github.com/redis/go-redis/v9"
+	"github.com/sunjiangjun/supernode/taskapi"
+	"github.com/sunjiangjun/supernode/taskapi/config"
 	"github.com/sunjiangjun/xlog"
 	"github.com/tidwall/gjson"
 )

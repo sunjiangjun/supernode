@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"time"
 
-	kafkaClient "github.com/0xcregis/easynode/common/kafka"
-	"github.com/0xcregis/easynode/taskapi"
-	"github.com/0xcregis/easynode/taskapi/config"
 	"github.com/segmentio/kafka-go"
+	kafkaClient "github.com/sunjiangjun/supernode/common/kafka"
+	"github.com/sunjiangjun/supernode/taskapi"
+	"github.com/sunjiangjun/supernode/taskapi/config"
 	"github.com/sunjiangjun/xlog"
 )
 

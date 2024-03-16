@@ -1,7 +1,7 @@
 # Easynode
-[![Go](https://github.com/0xcregis/easynode/actions/workflows/go.yml/badge.svg)](https://github.com/0xcregis/easynode/actions/workflows/go.yml)
+[![Go](https://github.com/sunjiangjun/supernode/actions/workflows/go.yml/badge.svg)](https://github.com/sunjiangjun/supernode/actions/workflows/go.yml)
 
-> English | [中文](https://github.com/0xcregis/easynode/blob/main/README_zh.md)
+> English | [中文](https://github.com/sunjiangjun/supernode/blob/main/README_zh.md)
 
 Multi-chain one-stop service platform, through API, can quickly connect to various on-chain services, such as NFT, Defi, transfer, query, etc.
 Allow all developers to use on-chain services without deploying nodes or knowing professional knowledge, including the following core services:
@@ -79,11 +79,11 @@ tips:
 ### 2. Download The Source
 
 ``````
- mkdir easynode && cd easynode
+ mkdir supernode && cd supernode
  
- git clone https://github.com/0xcregis/easynode.git
+ git clone https://github.com/sunjiangjun/supernode.git
  
- cd easynode
+ cd supernode
 ``````
 
 ### 3. Init Config & Database
@@ -95,11 +95,11 @@ tips:
   - task_config.json : BlockMin, BlockMax and other fields
 
 1. Clickhouse tool [Dbeaver](https://dbeaver.io/download/)
-2. Each configuration file in config folder [details](https://github.com/0xcregis/easynode/blob/main/cmd/easynode/README.md)
+2. Each configuration file in config folder [details](https://github.com/sunjiangjun/supernode/blob/main/cmd/supernode/README.md)
 
 ### 4. Start Dependent Environment
 
-- Initialize the environment for easynode operation
+- Initialize the environment for supernode operation
 
 ``````
    docker-compose -f docker-compose-single-base.yml up -d
@@ -124,7 +124,7 @@ tips:
    docker-compose -f docker-compose-single-base.yml down -v 
    
    #rebuild
-   docker-compose -f docker-compose-single-base-app.yml build easynode
+   docker-compose -f docker-compose-single-base-app.yml build supernode
   
 ``````
 
@@ -132,16 +132,16 @@ notes:
 
 - The default of clickhouse: account: test, password: test
 
-### 5. Build and Run easynode
+### 5. Build and Run supernode
 
-In order to improve the scope of application of easynode, we adopt a componentized design idea, so we provide the following three operation and deployment methods for easynode.
+In order to improve the scope of application of supernode, we adopt a componentized design idea, so we provide the following three operation and deployment methods for supernode.
 
 #### Binary package mode
 
 - Download configuration files
-  [Download](https://github.com/0xcregis/easynode/releases)
+  [Download](https://github.com/sunjiangjun/supernode/releases)
 - Download the installation package
-  [Download](https://github.com/0xcregis/easynode/releases)
+  [Download](https://github.com/sunjiangjun/supernode/releases)
 - Add hosts item
 
   ``````
@@ -150,10 +150,10 @@ In order to improve the scope of application of easynode, we adopt a componentiz
 
   *Among them, 192.168.2.9: Kafka server IP, replace it with your own server IP, easykafka: Kafka service name needs to be consistent with the environment script, and the general situation remains unchanged*
 
-- Run easynode
+- Run supernode
 
   ``````
-  ./easynode -collect ./config/collect_config.json -task ./config/task_config.json -blockchain ./config/blockchain_config.json -taskapi ./config/taskapi_config.json -store ./config/store_config.json
+  ./supernode -collect ./config/collect_config.json -task ./config/task_config.json -blockchain ./config/blockchain_config.json -taskapi ./config/taskapi_config.json -store ./config/store_config.json
   ``````
 
 #### Docker mode
@@ -162,17 +162,17 @@ In order to improve the scope of application of easynode, we adopt a componentiz
 
 ``````
    #create image
-   docker build -f Dockerfile -t easynode:1.0 . 
+   docker build -f Dockerfile -t supernode:1.0 . 
    
    #scan image
-   docker images |grep easynode
+   docker images |grep supernode
    
 ``````
 
-- Run easynode
+- Run supernode
 
 ``````
-    docker run --name easynode -p 9001:9001 -p 9002:9002 -p 9003:9003 --network easynode_easynode_net -v /root/easy_node/easynode/config/:/app/config/ -v /root/app/log/:/app/log/ -v /root/app/data:/app/data/ -d easynode:1.0  
+    docker run --name supernode -p 9001:9001 -p 9002:9002 -p 9003:9003 --network easynode_easynode_net -v /root/easy_node/supernode/config/:/app/config/ -v /root/app/log/:/app/log/ -v /root/app/data:/app/data/ -d supernode:1.0  
 ``````
 
 notes:
@@ -181,7 +181,7 @@ notes:
 
 2. -v file mount: the path of the container is immutable, and the path of the host is changed to the absolute path available on the machine
 
-3. The directory structure of ./config is as follows, the specific configuration of each configuration file [see](https://github.com/0xcregis/easynode/blob/main/cmd/easynode/README.md) and the file name is immutable
+3. The directory structure of ./config is as follows, the specific configuration of each configuration file [see](https://github.com/sunjiangjun/supernode/blob/main/cmd/supernode/README.md) and the file name is immutable
 
   ``````
        ./config
@@ -199,7 +199,7 @@ notes:
 
 - Networks setting
 
-  Determine the network name in step 4, use the following command to view, and modify the networks.default.name field in docker-compose-cluster-easynode.yml
+  Determine the network name in step 4, use the following command to view, and modify the networks.default.name field in docker-compose-cluster-supernode.yml
 
   ``````
   docker network ls|grep easynode_net
@@ -207,15 +207,15 @@ notes:
 
 - Manager service
 
-  According to the needs of specific scenarios, add or delete related services [learn ](https://github.com/0xcregis/easynode/wiki/Overall-Design-For-Easynode)
+  According to the needs of specific scenarios, add or delete related services [learn ](https://github.com/sunjiangjun/supernode/wiki/Overall-Design-For-Easynode)
 
 - Run cluster
 
   ``````
-  docker-compose -f docker-compose-cluster-easynode.yml up -d
+  docker-compose -f docker-compose-cluster-supernode.yml up -d
   ``````
 
-  The use and function of each service, [details](https://github.com/0xcregis/easynode/blob/main/cmd/easynode/README.md)
+  The use and function of each service, [details](https://github.com/sunjiangjun/supernode/blob/main/cmd/supernode/README.md)
 
 ### 6. Check
 
@@ -235,12 +235,12 @@ notes:
      docker exec -it 25032fc8414e kafka-console-consumer.sh --group g1 --topic ether_tx   --bootstrap-server easykafka:9092
 ``````
 
-- Check easynode
+- Check supernode
 
  ``````
     #review app container
     
-    docker ps |grep easynode
+    docker ps |grep supernode
     
     # review app log
     
@@ -249,9 +249,9 @@ notes:
 
 notes:
 
-- Port 9001 of easynode [Instructions](https://github.com/0xcregis/easynode/blob/main/cmd/taskapi/README.md)
-- Port 9002 of easynode [Instructions](https://github.com/0xcregis/easynode/blob/main/cmd/blockchain/README.md)
-- Port 9003 of easynode [Instructions](https://github.com/0xcregis/easynode/blob/main/cmd/store/README.md)
+- Port 9001 of supernode [Instructions](https://github.com/sunjiangjun/supernode/blob/main/cmd/taskapi/README.md)
+- Port 9002 of supernode [Instructions](https://github.com/sunjiangjun/supernode/blob/main/cmd/blockchain/README.md)
+- Port 9003 of supernode [Instructions](https://github.com/sunjiangjun/supernode/blob/main/cmd/store/README.md)
 
 ### 7. Usage
 
@@ -326,9 +326,9 @@ notes:
                              
 ``````
 
-[more](https://github.com/0xcregis/easynode/blob/main/cmd/easynode/README.md)
+[more](https://github.com/sunjiangjun/supernode/blob/main/cmd/supernode/README.md)
 
 
 tips:
 
- base code fork from https://github.com/0xcregis/easynode，it was also developed by me
+ base code fork from https://github.com/sunjiangjun/supernode，it was also developed by me

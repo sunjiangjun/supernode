@@ -7,9 +7,9 @@ import (
 	"log"
 	"time"
 
-	"github.com/0xcregis/easynode/blockchain/config"
-	"github.com/0xcregis/easynode/blockchain/service"
 	"github.com/gin-gonic/gin"
+	"github.com/sunjiangjun/supernode/blockchain/config"
+	"github.com/sunjiangjun/supernode/blockchain/service"
 	"github.com/sunjiangjun/xlog"
 )
 
@@ -65,7 +65,7 @@ func main() {
 	origin.POST("/nft/owner", srv.OwnerOf)
 	origin.POST("/nft/totalSupply", srv.TotalSupply)
 
-	myRoot := root.Group("easynode")
+	myRoot := root.Group("supernode")
 	myRoot.POST("/block/hash", srv.GetBlockByHash1)
 	myRoot.POST("/block/number", srv.GetBlockByNumber1)
 	myRoot.POST("/tx/hash", srv.GetTxByHash1)

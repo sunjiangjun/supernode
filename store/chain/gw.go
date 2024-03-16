@@ -3,16 +3,16 @@ package chain
 import (
 	"fmt"
 
-	chainCode "github.com/0xcregis/easynode/common/chain"
-	"github.com/0xcregis/easynode/store"
-	"github.com/0xcregis/easynode/store/chain/bnb"
-	"github.com/0xcregis/easynode/store/chain/btc"
-	"github.com/0xcregis/easynode/store/chain/ether"
-	"github.com/0xcregis/easynode/store/chain/filecoin"
-	"github.com/0xcregis/easynode/store/chain/polygonpos"
-	"github.com/0xcregis/easynode/store/chain/tron"
-	"github.com/0xcregis/easynode/store/chain/xrp"
 	"github.com/segmentio/kafka-go"
+	chainCode "github.com/sunjiangjun/supernode/common/chain"
+	"github.com/sunjiangjun/supernode/store"
+	"github.com/sunjiangjun/supernode/store/chain/bnb"
+	"github.com/sunjiangjun/supernode/store/chain/btc"
+	"github.com/sunjiangjun/supernode/store/chain/ether"
+	"github.com/sunjiangjun/supernode/store/chain/filecoin"
+	"github.com/sunjiangjun/supernode/store/chain/polygonpos"
+	"github.com/sunjiangjun/supernode/store/chain/tron"
+	"github.com/sunjiangjun/supernode/store/chain/xrp"
 )
 
 func GetReceiptFromKafka(value []byte, blockChain int64) (*store.Receipt, error) {

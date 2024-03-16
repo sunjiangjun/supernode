@@ -1,7 +1,7 @@
 # Easynode
-[![Go](https://github.com/0xcregis/easynode/actions/workflows/go.yml/badge.svg)](https://github.com/0xcregis/easynode/actions/workflows/go.yml)
+[![Go](https://github.com/sunjiangjun/supernode/actions/workflows/go.yml/badge.svg)](https://github.com/sunjiangjun/supernode/actions/workflows/go.yml)
 
-> [English](https://github.com/0xcregis/easynode/blob/main/README.md) | 中文
+> [English](https://github.com/sunjiangjun/supernode/blob/main/README.md) | 中文
 
 多链一站式服务平台，通过API可快速对接各种链上服务，NFT、Defi、transfer、查询等，
 让所有开发者都能使用链上服务，不需要部署节点、不需要了解专业知识,包含以下核心服务：
@@ -77,11 +77,11 @@
 ### 2. 源码下载
 
 ``````
- mkdir easynode && cd easynode
+ mkdir supernode && cd supernode
  
- git clone https://github.com/0xcregis/easynode.git
+ git clone https://github.com/sunjiangjun/supernode.git
  
- cd easynode
+ cd supernode
 ``````
 
 ### 3. 初始化配置文件和数据库脚本
@@ -93,7 +93,7 @@
     - task_config.json ：BlockMin、BlockMax等字段
 
 1. clickhouse的工具 [Dbeaver](https://dbeaver.io/download/)
-2. config 中每个配置文件 [详细说明](https://github.com/0xcregis/easynode/blob/main/cmd/easynode/README.md)
+2. config 中每个配置文件 [详细说明](https://github.com/sunjiangjun/supernode/blob/main/cmd/supernode/README.md)
 
 ### 4. 运行依赖环境
 
@@ -122,7 +122,7 @@
    docker-compose -f docker-compose-single-base.yml down -v 
    
    #重新构建
-   docker-compose -f docker-compose-single-base-app.yml build easynode
+   docker-compose -f docker-compose-single-base-app.yml build supernode
 
    #启动命令(启动依赖环境和 应用程序)
    docker-compose -f docker-compose-single-base-app.yml up -d
@@ -140,9 +140,9 @@ notes:
 #### 安装包模式
 
 - 下载配置文件
-  [下载](https://github.com/0xcregis/easynode/releases)
+  [下载](https://github.com/sunjiangjun/supernode/releases)
 - 下载安装包
-  [下载](https://github.com/0xcregis/easynode/releases)
+  [下载](https://github.com/sunjiangjun/supernode/releases)
 - 新增hosts项
 
   ``````
@@ -154,7 +154,7 @@ notes:
 - 运行程序
 
   ``````
-  ./easynode -collect ./config/collect_config.json -task ./config/task_config.json -blockchain ./config/blockchain_config.json -taskapi ./config/taskapi_config.json -store ./config/store_config.json
+  ./supernode -collect ./config/collect_config.json -task ./config/task_config.json -blockchain ./config/blockchain_config.json -taskapi ./config/taskapi_config.json -store ./config/store_config.json
   ``````
 
 #### docker 模式
@@ -163,17 +163,17 @@ notes:
 
 ``````
    #创建image
-   docker build -f Dockerfile -t easynode:1.0 . 
+   docker build -f Dockerfile -t supernode:1.0 . 
    
    #查看image
-   docker images |grep easynode
+   docker images |grep supernode
    
 ``````
 
-- 运行 easynode
+- 运行 supernode
 
 ``````
-    docker run --name easynode -p 9001:9001 -p 9002:9002 -p 9003:9003 --network easynode_easynode_net -v /root/easy_node/easynode/config/:/app/config/ -v /root/app/log/:/app/log/ -v /root/app/data:/app/data/ -d easynode:1.0  
+    docker run --name supernode -p 9001:9001 -p 9002:9002 -p 9003:9003 --network easynode_easynode_net -v /root/easy_node/supernode/config/:/app/config/ -v /root/app/log/:/app/log/ -v /root/app/data:/app/data/ -d supernode:1.0  
 ``````
 
 notes:
@@ -182,7 +182,7 @@ notes:
 
 2. -v 文件挂载 : 容器的路径不可变，宿主路径改成本机可用的绝对路径
 
-3. ./config的目录结构如下，每个配置文件的具体配置 [详见](https://github.com/0xcregis/easynode/blob/main/cmd/easynode/README.md)
+3. ./config的目录结构如下，每个配置文件的具体配置 [详见](https://github.com/sunjiangjun/supernode/blob/main/cmd/supernode/README.md)
 且文件名称不可变
 
   ``````
@@ -201,7 +201,7 @@ notes:
 
 - networks 设置
 
-  确定步骤4中网络名称，使用如下命令查看，并修改 docker-compose-cluster-easynode.yml 中networks.default.name 字段
+  确定步骤4中网络名称，使用如下命令查看，并修改 docker-compose-cluster-supernode.yml 中networks.default.name 字段
 
   ``````
   docker network ls|grep easynode_net
@@ -209,15 +209,15 @@ notes:
 
 - 配置服务
 
-    根据具体场景需要，增加或删除相关服务 [learn ](https://github.com/0xcregis/easynode/wiki/Overall-Design-For-Easynode)
+    根据具体场景需要，增加或删除相关服务 [learn ](https://github.com/sunjiangjun/supernode/wiki/Overall-Design-For-Easynode)
 
 
 - 运行集群
 
     ``````
-    docker-compose -f docker-compose-cluster-easynode.yml up -d
+    docker-compose -f docker-compose-cluster-supernode.yml up -d
     ``````
-    每个服务的使用和作用，[详见](https://github.com/0xcregis/easynode/blob/main/cmd/easynode/README.md)
+    每个服务的使用和作用，[详见](https://github.com/sunjiangjun/supernode/blob/main/cmd/supernode/README.md)
 
 ### 6. 检测
 
@@ -237,12 +237,12 @@ notes:
      docker exec -it 25032fc8414e kafka-console-consumer.sh --group g1 --topic ether_tx   --bootstrap-server easykafka:9092
 ``````
 
-- 检查 easynode 是否正常
+- 检查 supernode 是否正常
 
  ``````
     #查看 app 容器
     
-    docker ps |grep easynode
+    docker ps |grep supernode
     
     # 查看app 的命令行日志
     
@@ -251,9 +251,9 @@ notes:
 
 notes:
 
-- easynode的 9001 端口 [使用说明](https://github.com/0xcregis/easynode/blob/main/cmd/taskapi/README.md)
-- easynode的 9002 端口 [使用说明](https://github.com/0xcregis/easynode/blob/main/cmd/blockchain/README.md)
-- easynode的 9003 端口 [使用说明](https://github.com/0xcregis/easynode/blob/main/cmd/store/README.md)
+- easynode的 9001 端口 [使用说明](https://github.com/sunjiangjun/supernode/blob/main/cmd/taskapi/README.md)
+- easynode的 9002 端口 [使用说明](https://github.com/sunjiangjun/supernode/blob/main/cmd/blockchain/README.md)
+- easynode的 9003 端口 [使用说明](https://github.com/sunjiangjun/supernode/blob/main/cmd/store/README.md)
 
 ### 7.使用
 
@@ -328,9 +328,9 @@ notes:
                        
 ``````
 
-[更多](https://github.com/0xcregis/easynode/blob/main/cmd/easynode/README.md)
+[更多](https://github.com/sunjiangjun/supernode/blob/main/cmd/supernode/README.md)
 
 
 tips:
 
- base code fork from https://github.com/0xcregis/easynode，it was also developed by me
+ base code fork from https://github.com/sunjiangjun/supernode，it was also developed by me

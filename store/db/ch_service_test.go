@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/0xcregis/easynode/common/util"
-	"github.com/0xcregis/easynode/store"
-	"github.com/0xcregis/easynode/store/config"
+	"github.com/sunjiangjun/supernode/common/util"
+	"github.com/sunjiangjun/supernode/store"
+	"github.com/sunjiangjun/supernode/store/config"
 	"github.com/sunjiangjun/xlog"
 )
 

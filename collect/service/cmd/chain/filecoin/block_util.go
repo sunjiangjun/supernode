@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/0xcregis/easynode/collect"
-	"github.com/0xcregis/easynode/common/util"
+	"github.com/sunjiangjun/supernode/collect"
+	"github.com/sunjiangjun/supernode/common/util"
 	"github.com/tidwall/gjson"
 )
 

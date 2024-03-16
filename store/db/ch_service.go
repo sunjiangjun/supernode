@@ -6,9 +6,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/0xcregis/easynode/common/driver"
-	"github.com/0xcregis/easynode/store"
-	"github.com/0xcregis/easynode/store/config"
+	"github.com/sunjiangjun/supernode/common/driver"
+	"github.com/sunjiangjun/supernode/store"
+	"github.com/sunjiangjun/supernode/store/config"
 	"github.com/sunjiangjun/xlog"
 	"gorm.io/gorm"
 )

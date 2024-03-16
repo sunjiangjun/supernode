@@ -4,12 +4,12 @@ import (
 	"errors"
 	"time"
 
-	"github.com/0xcregis/easynode/blockchain"
-	chainConfig "github.com/0xcregis/easynode/blockchain/config"
-	"github.com/0xcregis/easynode/blockchain/service"
-	"github.com/0xcregis/easynode/task"
-	"github.com/0xcregis/easynode/task/config"
 	"github.com/sirupsen/logrus"
+	"github.com/sunjiangjun/supernode/blockchain"
+	chainConfig "github.com/sunjiangjun/supernode/blockchain/config"
+	"github.com/sunjiangjun/supernode/blockchain/service"
+	"github.com/sunjiangjun/supernode/task"
+	"github.com/sunjiangjun/supernode/task/config"
 	"github.com/sunjiangjun/xlog"
 	"github.com/tidwall/gjson"
 )

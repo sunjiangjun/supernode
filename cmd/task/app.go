@@ -9,8 +9,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/0xcregis/easynode/task/config"
-	"github.com/0xcregis/easynode/task/service/taskcreate"
+	"github.com/sunjiangjun/supernode/task/config"
+	"github.com/sunjiangjun/supernode/task/service/taskcreate"
 )
 
 func main() {

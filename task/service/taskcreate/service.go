@@ -6,12 +6,12 @@ import (
 	"math/rand"
 	"time"
 
-	kafkaClient "github.com/0xcregis/easynode/common/kafka"
-	"github.com/0xcregis/easynode/task"
-	"github.com/0xcregis/easynode/task/config"
-	"github.com/0xcregis/easynode/task/service/taskcreate/db"
 	"github.com/segmentio/kafka-go"
 	"github.com/sirupsen/logrus"
+	kafkaClient "github.com/sunjiangjun/supernode/common/kafka"
+	"github.com/sunjiangjun/supernode/task"
+	"github.com/sunjiangjun/supernode/task/config"
+	"github.com/sunjiangjun/supernode/task/service/taskcreate/db"
 	"github.com/sunjiangjun/xlog"
 )
 

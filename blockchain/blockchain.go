@@ -1,6 +1,6 @@
 package blockchain
 
-import "github.com/0xcregis/easynode/blockchain/config"
+import "github.com/sunjiangjun/supernode/blockchain/config"
 
 type ChainConn interface {
 	SendRequestToChain(host string, token string, query string) (string, error)

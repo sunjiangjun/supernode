@@ -89,11 +89,11 @@ services:
         hard: 262144
     depends_on:
       - easyzk
-  easynode:
+  supernode:
     build:
       context: .
       dockerfile: Dockerfile
-    image: easynode
+    image: supernode
     networks:
      - easynode_net
     ports:

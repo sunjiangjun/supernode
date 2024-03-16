@@ -7,12 +7,12 @@ import (
 	"io"
 	"time"
 
-	"github.com/0xcregis/easynode/store"
-	"github.com/0xcregis/easynode/store/config"
-	"github.com/0xcregis/easynode/store/db"
 	"github.com/gin-gonic/gin"
 	"github.com/gofrs/uuid"
 	"github.com/sirupsen/logrus"
+	"github.com/sunjiangjun/supernode/store"
+	"github.com/sunjiangjun/supernode/store/config"
+	"github.com/sunjiangjun/supernode/store/db"
 	"github.com/sunjiangjun/xlog"
 	"github.com/tidwall/gjson"
 )

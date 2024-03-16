@@ -3,7 +3,7 @@ package tron
 import (
 	"testing"
 
-	"github.com/0xcregis/easynode/store"
+	"github.com/sunjiangjun/supernode/store"
 )
 
 func TestParseTx(t *testing.T) {

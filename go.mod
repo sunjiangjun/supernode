@@ -1,4 +1,4 @@
-module github.com/0xcregis/easynode
+module github.com/sunjiangjun/supernode
 
 go 1.20
 

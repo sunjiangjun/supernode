@@ -6,13 +6,13 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/0xcregis/easynode/collect"
-	"github.com/0xcregis/easynode/collect/config"
-	"github.com/0xcregis/easynode/collect/service/cmd/chain"
-	"github.com/0xcregis/easynode/collect/service/db"
-	kafkaClient "github.com/0xcregis/easynode/common/kafka"
 	"github.com/segmentio/kafka-go"
 	"github.com/sirupsen/logrus"
+	"github.com/sunjiangjun/supernode/collect"
+	"github.com/sunjiangjun/supernode/collect/config"
+	"github.com/sunjiangjun/supernode/collect/service/cmd/chain"
+	"github.com/sunjiangjun/supernode/collect/service/db"
+	kafkaClient "github.com/sunjiangjun/supernode/common/kafka"
 	"github.com/sunjiangjun/xlog"
 )
 

@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/0xcregis/easynode/collect"
-	"github.com/0xcregis/easynode/collect/config"
+	"github.com/sunjiangjun/supernode/collect"
+	"github.com/sunjiangjun/supernode/collect/config"
 	"github.com/sunjiangjun/xlog"
 )
 

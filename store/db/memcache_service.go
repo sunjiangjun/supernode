@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/0xcregis/easynode/store"
-	"github.com/0xcregis/easynode/store/config"
 	"github.com/redis/go-redis/v9"
+	"github.com/sunjiangjun/supernode/store"
+	"github.com/sunjiangjun/supernode/store/config"
 	"github.com/sunjiangjun/xlog"
 )
 

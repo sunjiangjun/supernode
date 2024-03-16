@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	storeConfig "github.com/0xcregis/easynode/store/config"
+	storeConfig "github.com/sunjiangjun/supernode/store/config"
 	"github.com/sunjiangjun/xlog"
 )
 

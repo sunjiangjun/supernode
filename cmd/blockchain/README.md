@@ -12,9 +12,9 @@ querying mining fees.
 
 (Take linux system as an example)
 
-- mkdir easynode & cd easynode
-- git clone https://github.com/0xcregis/easynode.git
-- cd easynode/cmd/blockchain
+- mkdir supernode & cd supernode
+- git clone https://github.com/sunjiangjun/supernode.git
+- cd supernode/cmd/blockchain
 - CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o easynode_chain app.go
   (Compiling a Linux program under Mac is an example. Please search for other cross-compilation commands by yourself)
 
@@ -406,11 +406,11 @@ curl -X POST \
       "message": "ok"        
      }
 
-// there are many method of easynode space that response data is returned uniformly, ignoring chain differences.
+// there are many method of supernode space that response data is returned uniformly, ignoring chain differences.
 
-// query balance of main in easynode space
+// query balance of main in supernode space
 curl -X POST \
-  http://127.0.0.1:9002/api/chain/easynode/account/balance \
+  http://127.0.0.1:9002/api/chain/supernode/account/balance \
   -H 'Content-Type: application/json' \
   -H 'Postman-Token: 1762686f-e680-4c06-b18e-d33b92ab390f' \
   -H 'cache-control: no-cache' \
@@ -432,9 +432,9 @@ response:
     "message": "ok" // error message when it request failure
 }
 
-//query block by hash  in easynode space
+//query block by hash  in supernode space
 curl -X POST \
-  http://127.0.0.1:9002/api/chain/easynode/block/hash \
+  http://127.0.0.1:9002/api/chain/supernode/block/hash \
   -H 'Content-Type: application/json' \
   -H 'Postman-Token: ee71a75f-f3af-4f1e-9ff3-fbc9fa4ed8e2' \
   -H 'cache-control: no-cache' \
@@ -453,9 +453,9 @@ response:
     "message": "ok" // error message when it request failure
 }
 
-//query tx by hash  in easynode space
+//query tx by hash  in supernode space
 curl -X POST \
-  http://127.0.0.1:9002/api/chain/easynode/tx/hash \
+  http://127.0.0.1:9002/api/chain/supernode/tx/hash \
   -H 'Content-Type: application/json' \
   -H 'Postman-Token: f90e9adf-e82c-48e2-9e75-84035fe67680' \
   -H 'cache-control: no-cache' \
@@ -478,9 +478,9 @@ response:
     "message": "ok" // error message when it request failure    
 }
 
-//query block by number in easynode space
+//query block by number in supernode space
 curl -X POST \
-  http://127.0.0.1:9002/api/chain/easynode/block/number \
+  http://127.0.0.1:9002/api/chain/supernode/block/number \
   -H 'Content-Type: application/json' \
   -H 'Postman-Token: 80523f3e-ec91-45e5-b05e-df156dc6a088' \
   -H 'cache-control: no-cache' \
@@ -500,9 +500,9 @@ response:
     "message": "ok" // error message when it request failure    
 }
 
-//query token balance in easynode space
+//query token balance in supernode space
 curl -X POST \
-  http://127.0.0.1:9002/api/chain/easynode/account/tokenBalance \
+  http://127.0.0.1:9002/api/chain/supernode/account/tokenBalance \
   -H 'Content-Type: application/json' \
   -H 'Postman-Token: 3fdef499-681a-4c21-8dc3-3ca0e9eb1a11' \
   -H 'cache-control: no-cache' \
@@ -525,9 +525,9 @@ response:
     "message": "ok"
 }
 
-//query nonce in easynode space
+//query nonce in supernode space
 curl -X POST \
-  http://127.0.0.1:9002/api/chain/easynode/account/nonce \
+  http://127.0.0.1:9002/api/chain/supernode/account/nonce \
   -H 'Content-Type: application/json' \
   -H 'Postman-Token: d6c68d0b-a29f-4321-b008-b27910b4bfe1' \
   -H 'cache-control: no-cache' \
@@ -544,9 +544,9 @@ response:
     "message": "ok" // error message when it request failure    
 }
 
-// query block in easynode space
+// query block in supernode space
 curl -X POST \
-  http://127.0.0.1:9002/api/chain/easynode/block/latest \
+  http://127.0.0.1:9002/api/chain/supernode/block/latest \
   -H 'Content-Type: application/json' \
   -H 'Postman-Token: 709ff247-53e9-4c90-bccc-3e1c3a6f241a' \
   -H 'cache-control: no-cache' \
@@ -566,9 +566,9 @@ response:
 
 
 
-//query price to easynode space on current latest block
+//query price to supernode space on current latest block
 curl -X POST \
-  http://127.0.0.1:9002/api/chain/easynode/gas/price \
+  http://127.0.0.1:9002/api/chain/supernode/gas/price \
   -H 'Content-Type: application/json' \
   -H 'Postman-Token: 17e6be68-ef2e-4d18-aba8-aa5ccde36e09' \
   -H 'cache-control: no-cache' \
@@ -583,9 +583,9 @@ response:
     "message": "ok" // error message when it request failure    
 }
 
-//estimateGas fee in easynode space 
+//estimateGas fee in supernode space 
 curl -X POST \
-  http://127.0.0.1:9002/api/chain/easynode/gas/estimateGas \
+  http://127.0.0.1:9002/api/chain/supernode/gas/estimateGas \
   -H 'Content-Type: application/json' \
   -H 'Postman-Token: 8cc2e412-ac93-4d6e-9fa7-6001c3376733' \
   -H 'cache-control: no-cache' \
@@ -603,9 +603,9 @@ response:
     "message": "ok" // error message when it request failure
 }
 
-//sendRawTransaction send tx to chain in easynode space 
+//sendRawTransaction send tx to chain in supernode space 
 curl -X POST \
-  http://127.0.0.1:9002/api/chain/easynode/tx/sendRawTransaction \
+  http://127.0.0.1:9002/api/chain/supernode/tx/sendRawTransaction \
   -H 'Content-Type: application/json' \
   -H 'Postman-Token: 9cfb96da-eec5-4354-b71e-93591ffdcc3a' \
   -H 'cache-control: no-cache' \
@@ -635,7 +635,7 @@ OR
 
 // Query the resource information of an account(bandwidth,energy,etc) for only tron
 curl -X POST \
-  http://127.0.0.1:9002/api/chain/easynode/account/getAccountResource \
+  http://127.0.0.1:9002/api/chain/supernode/account/getAccountResource \
   -H 'Content-Type: application/json' \
   -H 'Postman-Token: 6c713d4a-e65c-4836-a02c-a431dcf7aa5f' \
   -H 'cache-control: no-cache' \
@@ -661,7 +661,7 @@ vist: [https://developers.tron.network/reference/getaccountresource]
 
 // estimateGasForTron for only tron
 curl -X POST \
-  http://127.0.0.1:9002/api/chain/easynode/gas/estimateGasForTron \
+  http://127.0.0.1:9002/api/chain/supernode/gas/estimateGasForTron \
   -H 'Content-Type: application/json' \
   -H 'Postman-Token: f29f01a9-e7cd-444b-a574-d728ef0c6ab0' \
   -H 'cache-control: no-cache' \

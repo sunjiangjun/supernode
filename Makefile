@@ -2,12 +2,12 @@
 # with Go source code. If you know what GOPATH is then you probably
 # don't need to bother with make.
 
-.PHONY: easynode all test clean
+.PHONY: supernode all test clean
 
 GORUN = env GO111MODULE=on go run
 
-easynode:
-	$(GORUN) build/ci.go install ./cmd/easynode
+supernode:
+	$(GORUN) build/ci.go install ./cmd/supernode
 	@echo "Done building."
 
 all:

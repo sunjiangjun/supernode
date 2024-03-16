@@ -11,11 +11,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/0xcregis/easynode/collect"
-	"github.com/0xcregis/easynode/collect/config"
 	"github.com/redis/go-redis/v9"
 	"github.com/segmentio/kafka-go"
 	"github.com/sirupsen/logrus"
+	"github.com/sunjiangjun/supernode/collect"
+	"github.com/sunjiangjun/supernode/collect/config"
 	"github.com/sunjiangjun/xlog"
 	"github.com/tidwall/gjson"
 )

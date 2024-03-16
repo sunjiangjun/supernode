@@ -10,19 +10,19 @@ import (
 	"syscall"
 	"time"
 
-	blockchainConfig "github.com/0xcregis/easynode/blockchain/config"
-	blockchainService "github.com/0xcregis/easynode/blockchain/service"
-	collectConfig "github.com/0xcregis/easynode/collect/config"
-	"github.com/0xcregis/easynode/collect/service/cmd"
-	collectMonitor "github.com/0xcregis/easynode/collect/service/monitor"
-	"github.com/0xcregis/easynode/common/util"
-	storeConfig "github.com/0xcregis/easynode/store/config"
-	"github.com/0xcregis/easynode/store/service"
-	taskConfig "github.com/0xcregis/easynode/task/config"
-	"github.com/0xcregis/easynode/task/service/taskcreate"
-	taskapiConfig "github.com/0xcregis/easynode/taskapi/config"
-	taskapiService "github.com/0xcregis/easynode/taskapi/service"
 	"github.com/gin-gonic/gin"
+	blockchainConfig "github.com/sunjiangjun/supernode/blockchain/config"
+	blockchainService "github.com/sunjiangjun/supernode/blockchain/service"
+	collectConfig "github.com/sunjiangjun/supernode/collect/config"
+	"github.com/sunjiangjun/supernode/collect/service/cmd"
+	collectMonitor "github.com/sunjiangjun/supernode/collect/service/monitor"
+	"github.com/sunjiangjun/supernode/common/util"
+	storeConfig "github.com/sunjiangjun/supernode/store/config"
+	"github.com/sunjiangjun/supernode/store/service"
+	taskConfig "github.com/sunjiangjun/supernode/task/config"
+	"github.com/sunjiangjun/supernode/task/service/taskcreate"
+	taskapiConfig "github.com/sunjiangjun/supernode/taskapi/config"
+	taskapiService "github.com/sunjiangjun/supernode/taskapi/service"
 	"github.com/sunjiangjun/xlog"
 )
 
@@ -205,7 +205,7 @@ func startBlockchain(configPath string, ctx context.Context) {
 	origin.POST("/nft/owner", srv.OwnerOf)
 	origin.POST("/nft/totalSupply", srv.TotalSupply)
 
-	myRoot := root.Group("easynode")
+	myRoot := root.Group("supernode")
 	myRoot.POST("/block/hash", srv.GetBlockByHash1)
 	myRoot.POST("/block/number", srv.GetBlockByNumber1)
 	myRoot.POST("/tx/hash", srv.GetTxByHash1)

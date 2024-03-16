@@ -6,9 +6,9 @@ import (
 	"log"
 	"time"
 
-	"github.com/0xcregis/easynode/taskapi/config"
-	"github.com/0xcregis/easynode/taskapi/service"
 	"github.com/gin-gonic/gin"
+	"github.com/sunjiangjun/supernode/taskapi/config"
+	"github.com/sunjiangjun/supernode/taskapi/service"
 	"github.com/sunjiangjun/xlog"
 )
 

@@ -1,4 +1,4 @@
-Task is the foundation and core service of the easynode system and is a necessary condition for the operation of other
+Task is the foundation and core service of the supernode system and is a necessary condition for the operation of other
 services.
 This service is responsible for task generation, task distribution, system monitoring and other functions.
 
@@ -11,9 +11,9 @@ This service is responsible for task generation, task distribution, system monit
 
 (Take linux system as an example)
 
-- mkdir easynode & cd easynode
-- git clone https://github.com/0xcregis/easynode.git
-- cd easynode/cmd/task
+- mkdir supernode & cd supernode
+- git clone https://github.com/sunjiangjun/supernode.git
+- cd supernode/cmd/task
 - CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o easynode_task app.go
   (Compiling a Linux program under Mac is an example. Please search for other cross-compilation commands by yourself)
 
@@ -44,7 +44,7 @@ This service is responsible for task generation, task distribution, system monit
       "BlockChainName": "eth", //chain name
       "BlockChainCode": 200, //chain code
       "BlockMin": 17325771, //min blockNumber, required
-      "BlockMax": 0 //max blockNumber, If this value is set to zero,easynode will get latest blockNumber from blockchain
+      "BlockMax": 0 //max blockNumber, If this value is set to zero,supernode will get latest blockNumber from blockchain
     }
   ]
 }

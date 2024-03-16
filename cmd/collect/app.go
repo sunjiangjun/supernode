@@ -9,10 +9,10 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/0xcregis/easynode/collect/config"
-	"github.com/0xcregis/easynode/collect/service/cmd"
-	"github.com/0xcregis/easynode/collect/service/monitor"
-	"github.com/0xcregis/easynode/common/util"
+	"github.com/sunjiangjun/supernode/collect/config"
+	"github.com/sunjiangjun/supernode/collect/service/cmd"
+	"github.com/sunjiangjun/supernode/collect/service/monitor"
+	"github.com/sunjiangjun/supernode/common/util"
 )
 
 func main() {

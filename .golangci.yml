@@ -8,7 +8,7 @@ run:
   skip-dirs-use-default: true
   skip-files:
     - cmd/collect/app.go
-    - cmd/easynode/app.go
+    - cmd/supernode/app.go
     - cmd/task/app.go
 
 linters:

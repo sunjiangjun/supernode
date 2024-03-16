@@ -43,8 +43,8 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/0xcregis/easynode/build/build"
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/sunjiangjun/supernode/build/build"
 )
 
 var (

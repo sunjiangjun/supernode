@@ -8,9 +8,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/0xcregis/easynode/blockchain"
-	"github.com/0xcregis/easynode/blockchain/chain"
-	"github.com/0xcregis/easynode/blockchain/config"
+	"github.com/sunjiangjun/supernode/blockchain"
+	"github.com/sunjiangjun/supernode/blockchain/chain"
+	"github.com/sunjiangjun/supernode/blockchain/config"
 	"github.com/sunjiangjun/xlog"
 	"github.com/tidwall/gjson"
 )

@@ -10,9 +10,9 @@ This service is the API service of task, responsible for submitting tasks (inclu
 
 (Take linux system as an example)
 
-- mkdir easynode & cd easynode
-- git clone https://github.com/0xcregis/easynode.git
-- cd easynode/cmd/taskapi
+- mkdir supernode & cd supernode
+- git clone https://github.com/sunjiangjun/supernode.git
+- cd supernode/cmd/taskapi
 - CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o easynode_taskapi app.go
   (Compiling a Linux program under Mac is an example. Please search for other cross-compilation commands by yourself)
 - ./easynode_taskapi -config ./config.json
