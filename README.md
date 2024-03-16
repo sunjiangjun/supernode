@@ -1,5 +1,5 @@
-# Easynode
-[![Go](https://github.com/sunjiangjun/supernode/actions/workflows/go.yml/badge.svg)](https://github.com/sunjiangjun/supernode/actions/workflows/go.yml)
+# Supernode
+[![Go](https://github.com/0xcregis/easynode/actions/workflows/go.yml/badge.svg)](https://github.com/0xcregis/easynode/actions/workflows/go.yml)
 
 > English | [中文](https://github.com/sunjiangjun/supernode/blob/main/README_zh.md)
 
@@ -32,7 +32,7 @@ Allow all developers to use on-chain services without deploying nodes or knowing
 - Historical data backup
 
 
-## Blockchain for table
+## Supported blockchain
 
   | blockchain      | chaincode |  desc   |
   |:----------------|:---------:|:-------:|
