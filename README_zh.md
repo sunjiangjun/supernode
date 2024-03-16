@@ -1,4 +1,4 @@
-# Easynode
+# Spernode
 [![Go](https://github.com/0xcregis/easynode/actions/workflows/go.yml/badge.svg)](https://github.com/0xcregis/easynode/actions/workflows/go.yml)
 
 > [English](https://github.com/0xcregis/easynode/blob/main/README.md) | 中文
@@ -30,7 +30,7 @@
 - 支持订阅多种业务场景：资产交易，代币转移，质押，激活等
 - 历史数据备份
 
-## 公链表
+## 已经支持公链
 
 | blockchain      | chaincode |  desc   |
   |:----------------|:---------:|:-------:|
