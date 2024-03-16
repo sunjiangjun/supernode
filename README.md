@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 # Easynode
 [![Go](https://github.com/sunjiangjun/supernode/actions/workflows/go.yml/badge.svg)](https://github.com/sunjiangjun/supernode/actions/workflows/go.yml)
+=======
+# Supernode
+[![Go](https://github.com/0xcregis/easynode/actions/workflows/go.yml/badge.svg)](https://github.com/0xcregis/easynode/actions/workflows/go.yml)
+>>>>>>> ceec0ec (Update README.md)
 
 > English | [中文](https://github.com/sunjiangjun/supernode/blob/main/README_zh.md)
 
